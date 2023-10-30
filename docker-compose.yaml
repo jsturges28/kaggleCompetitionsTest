@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  tensorflow:
+    image: nvcr.io/nvidia/tensorflow:23.03-tf2-py3
+    volumes:
+      - /home/jett/Documents/GitHub/kaggleCompetitionsTest:/workspace
+    command: /bin/bash
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all

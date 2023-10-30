@@ -1,0 +1,22 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-docker-compose
+{
+    "name": "Tensorflow Project",
+    "dockerComposeFile": [
+        "../docker-compose.yaml",
+        "docker-compose.yml"
+    ],
+    "service": "tensorflow",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+				"ms-python.vscode-pylance"
+            ]
+        }
+    }
+    // ... rest of your configuration ...
+}
+
+
